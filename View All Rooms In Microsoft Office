@@ -1,0 +1,7 @@
+Install-Module -Name ExchangeOnlineManagement -RequiredVersion 2.0.3 
+
+Import-Module ExchangeOnlineManagement 
+
+Connect-ExchangeOnline 
+
+Get-Mailbox | Where {$_.ResourceType -eq "Room"}
