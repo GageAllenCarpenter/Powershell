@@ -1,0 +1,7 @@
+Install-Module -Name ExchangeOnlineManagement -RequiredVersion 2.0.3 
+
+Import-Module ExchangeOnlineManagement 
+
+Connect-ExchangeOnline
+
+Set-Mailbox -Identity <name or email of the account being converted> -Type <Regular | Room | Equipment | Shared>
