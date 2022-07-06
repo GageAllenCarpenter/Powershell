@@ -1,0 +1,4 @@
+Install-Module PowerShellGet -Force
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Install-Module Microsoft.Graph -Scope CurrentUser
+Install-Module Microsoft.Graph -Scope AllUsers
